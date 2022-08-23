@@ -25,7 +25,7 @@ Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 
 Layout/LineLength:
-  Max: 120
+  Max: 150
   AllowedPatterns:
     - ^\W*\#
 
@@ -49,6 +49,9 @@ Layout/RescueEnsureAlignment:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Metrics/MethodLength:
+  Max: 15
 
 Metrics/ModuleLength:
   Exclude:
