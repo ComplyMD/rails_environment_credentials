@@ -3,7 +3,7 @@
 $LOAD_PATH << File.join(File.dirname(__FILE__), 'lib')
 require 'rails_environment_credentials/version'
 
-Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
+Gem::Specification.new do |s|
   s.name        = 'rails_environment_credentials'
   s.version     = RailsEnvironmentCredentials::VERSION
   s.authors     = ['Taylor Yelverton']
@@ -29,4 +29,6 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
 
   s.add_dependency('activesupport', '>= 5.0.0')
   s.add_dependency('railties', '>= 5.0.0')
+
+  s.add_dependency('httparty', '~> 0.16.2')
 end

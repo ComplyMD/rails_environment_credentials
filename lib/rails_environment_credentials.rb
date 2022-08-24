@@ -10,6 +10,7 @@ require 'rails_environment_credentials/configuration'
 require 'rails_environment_credentials/encrypted_configuration'
 require 'rails_environment_credentials/encrypted_file'
 require 'rails_environment_credentials/key_strategies'
+require 'rails_environment_credentials/railtie'
 require 'rails_environment_credentials/version'
 
 Rails::Application::Configuration.send(:include, RailsEnvironmentCredentials::Configuration)

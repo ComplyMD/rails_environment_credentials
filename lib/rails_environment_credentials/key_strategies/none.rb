@@ -6,6 +6,8 @@ module RailsEnvironmentCredentials
     class None < Base; end
 
     add(nil, None)
+    add('none', None)
+    add('rails', None)
 
   end
 end

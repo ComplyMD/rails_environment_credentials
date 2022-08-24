@@ -6,7 +6,7 @@ module RailsEnvironmentCredentials
     class Raw < Base
 
       def key
-        Rails.application.config.credentials.raw_key
+        Rails.application.config.credentials.key_strategy_options['key']
       end
 
     end
