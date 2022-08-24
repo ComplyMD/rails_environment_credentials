@@ -3,7 +3,7 @@
 $LOAD_PATH << File.join(File.dirname(__FILE__), 'lib')
 require 'rails_environment_credentials/version'
 
-Gem::Specification.new do |s|
+Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.name        = 'rails_environment_credentials'
   s.version     = RailsEnvironmentCredentials::VERSION
   s.authors     = ['Taylor Yelverton']
@@ -21,10 +21,7 @@ Gem::Specification.new do |s|
     'rubygems_mfa_required' => 'true',
   }
 
-  s.files = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z -- {lib/**/*,README.md,MIT-LICENSE,rails_environment_credentials.gemspec}`.
-      split("\x0")
-  end
+  s.files = Dir['lib/**/*','README.md','MIT-LICENSE','rails_environment_credentials.gemspec']
 
   s.require_paths = %w[ lib ]
 
