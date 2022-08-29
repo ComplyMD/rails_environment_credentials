@@ -42,7 +42,6 @@ module RailsEnvironmentCredentials
       super
       @credentials = CredentialsConfig.new
       @credentials.merge! credentials_config
-      
     end
 
     private
