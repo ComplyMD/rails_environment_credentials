@@ -3,7 +3,7 @@ PATH
   specs:
     rails_environment_credentials (0.2.0)
       activesupport (>= 5.0.0)
-      httparty (~> 0.16.2)
+      httparty (~> 0.17.0)
       railties (>= 5.0.0)
 
 GEM
@@ -37,7 +37,7 @@ GEM
     erubi (1.11.0)
     faker (2.22.0)
       i18n (>= 1.8.11, < 2)
-    httparty (0.16.4)
+    httparty (0.17.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     i18n (1.12.0)
